@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Application Letter · Kago Thipe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">KT.</a>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+      <li><a href="groupwork.html">Group Work</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="application.html" class="active">Letter</a></li>
+      <li><a href="email.html">Email</a></li>
+      <li><a href="study.html">Study Tips</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+  <section class="fade">
+    <h1>Application Letter</h1>
+    <p>A formal letter applying for industrial attachment.</p>
+
+    <div class="letter">
+      <p>
+        Kago Thipe<br>
+        [kago.thipe@email.com] · [Phone]<br>
+        [City, Botswana]
+      </p>
+
+      <p>[Date, e.g., 15 November 2026]</p>
+
+      <p>
+        [Hiring Manager's Name or "The Human Resources Manager"]<br>
+        [Company Name]<br>
+        [Company Address]
+      </p>
+
+      <p><strong>RE: Application for Industrial Attachment</strong></p>
+
+      <p>Dear [Hiring Manager / Sir / Madam],</p>
+
+      <p>[Paragraph 1 — Introduce yourself: name, programme (BSc Applied Business Computing at BSBS), year of study, and the purpose of the letter. State clearly that you are applying for industrial attachment.]</p>
+
+      <p>[Paragraph 2 — Explain why you are interested in this specific company and how your programme aligns with their work. Mention something specific about the company — a project, value, or service — to show you have researched them.]</p>
+
+      <p>[Paragraph 3 — Highlight what you can offer: technical skills (Excel, Python, business analysis), soft skills (communication, teamwork), and your eagerness to learn. Reference your attached CV.]</p>
+
+      <p>[Paragraph 4 — Close politely: thank them for their time, note that your CV is attached, and state that you are available for an interview at their convenience.]</p>
+
+      <p class="signoff">
+        Yours faithfully,<br><br><br>
+        <strong>Kago Thipe</strong>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Kago Thipe · BSc Applied Business Computing · BSBS · <a href="mailto:[kago.thipe@email.com]">[kago.thipe@email.com]</a>
+</footer>
+
+<script>
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
+  });
+  document.querySelectorAll('.fade').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kago Thipe · Digital Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">KT.</a>
+    <ul>
+      <li><a href="index.html" class="active">About</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+      <li><a href="groupwork.html">Group Work</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="application.html">Letter</a></li>
+      <li><a href="email.html">Email</a></li>
+      <li><a href="study.html">Study Tips</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <h1>Kago Thipe</h1>
+  <p class="tagline">BSc Applied Business Computing student at BSBS · bridging business and technology · aspiring business analyst</p>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="cv.html">View My CV</a>
+    <a class="btn btn-ghost" href="mailto:[kago.thipe@email.com]">Get in Touch</a>
+  </div>
+</header>
+
+<main class="container">
+  <section class="fade">
+    <div class="profile card">
+      <img class="avatar" src="assets/img/profile.jpg" alt="Kago Thipe">
+      <div>
+        <h2>About Me</h2>
+        <p>[Write 150–200 words in your own voice. Introduce yourself — where you're from (region only, no address or ID number), why you chose BSc Applied Business Computing, and what excites you about the intersection of business and technology. Mention a hobby or interest so it doesn't read as generic. Keep the tone professional but warm.]</p>
+      </div>
+    </div>
+
+    <div class="facts">
+      <span>🎓 Year 1 · BSBS</span>
+      <span>📍 Botswana</span>
+      <span>💡 Business · Data · Technology</span>
+    </div>
+
+    <h2>Skills at a Glance</h2>
+    <div class="badges">
+      <span class="badge">Microsoft Excel</span>
+      <span class="badge">Python</span>
+      <span class="badge">Business Analysis</span>
+      <span class="badge">Canva</span>
+      <span class="badge">Teamwork</span>
+      <span class="badge">Communication</span>
+      <span class="badge">Time Management</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Kago Thipe · BSc Applied Business Computing · BSBS · <a href="mailto:[kago.thipe@email.com]">[kago.thipe@email.com]</a>
+</footer>
+
+<script>
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
+  });
+  document.querySelectorAll('.fade').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

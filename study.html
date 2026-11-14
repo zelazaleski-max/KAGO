@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Tips · Kago Thipe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">KT.</a>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+      <li><a href="groupwork.html">Group Work</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="application.html">Letter</a></li>
+      <li><a href="email.html">Email</a></li>
+      <li><a href="study.html" class="active">Study Tips</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+  <section class="fade">
+    <h1>Study Tips & Resources</h1>
+    <p>Strategies that have worked for me so far — feel free to try them.</p>
+
+    <div class="grid" style="margin-top:2rem; gap:1rem;">
+
+      <div class="tip">
+        <h3>🍅 Pomodoro Technique</h3>
+        <p>Study in 25-minute focused blocks, then take a 5-minute break. After four rounds, rest for 15–30 minutes. It keeps my focus sharp and stops burnout.</p>
+      </div>
+
+      <div class="tip">
+        <h3>🃏 Flashcards (Anki)</h3>
+        <p>For definitions and key terms, Anki's spaced-repetition system helps me remember things long-term without last-minute cramming.</p>
+      </div>
+
+      <div class="tip">
+        <h3>📅 Weekly Timetable</h3>
+        <p>Every Sunday I plan my week — deadlines, study slots, and rest. Writing it down makes it real.</p>
+      </div>
+
+      <div class="tip">
+        <h3>📊 Apply What I Learn</h3>
+        <p>In Applied Business Computing, theory sticks when I practise it — rebuilding a spreadsheet, writing a small Python script, or sketching a business process diagram.</p>
+      </div>
+
+      <div class="tip">
+        <h3>📺 YouTube Channels</h3>
+        <p>[List your favourites — e.g., freeCodeCamp, Leila Gharani (Excel), Crash Course, NetworkChuck.]</p>
+      </div>
+
+      <div class="tip">
+        <h3>📚 The Library</h3>
+        <p>Changing my study environment makes a huge difference. The library is quieter and I'm more productive there.</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Kago Thipe · BSc Applied Business Computing · BSBS · <a href="mailto:[kago.thipe@email.com]">[kago.thipe@email.com]</a>
+</footer>
+
+<script>
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
+  });
+  document.querySelectorAll('.fade').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

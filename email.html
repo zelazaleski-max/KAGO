@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Template · Kago Thipe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">KT.</a>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+      <li><a href="groupwork.html">Group Work</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="application.html">Letter</a></li>
+      <li><a href="email.html" class="active">Email</a></li>
+      <li><a href="study.html">Study Tips</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+  <section class="fade">
+    <h1>Email Template</h1>
+    <p>A short, professional email to accompany a CV and application letter.</p>
+
+    <div class="email-mock">
+      <div class="header">
+        <div><strong>To:</strong> hiring@company.co.bw</div>
+        <div><strong>Subject:</strong> Application for Industrial Attachment — Kago Thipe</div>
+      </div>
+      <div class="body">
+        <p>Dear [Hiring Manager],</p>
+
+        <p>I hope this email finds you well. Please find attached my CV and application letter for the industrial attachment position advertised on [source — e.g., company website, LinkedIn, Botswana job board].</p>
+
+        <p>I am a Year 1 BSc Applied Business Computing student at Botswana School of Business Sciences, with a strong interest in [area — e.g., business analysis, data-driven decision-making, digital transformation]. I would welcome the opportunity to contribute to your team and learn from your organisation.</p>
+
+        <p>Please let me know if you require any further information. Thank you for your time and consideration.</p>
+
+        <p>
+          Kind regards,<br><br>
+          <strong>Kago Thipe</strong><br>
+          BSc Applied Business Computing · Year 1<br>
+          [Phone] · [kago.thipe@email.com]<br>
+          [LinkedIn URL — optional]
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Kago Thipe · BSc Applied Business Computing · BSBS · <a href="mailto:[kago.thipe@email.com]">[kago.thipe@email.com]</a>
+</footer>
+
+<script>
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
+  });
+  document.querySelectorAll('.fade').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills & Projects · Kago Thipe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">KT.</a>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+      <li><a href="groupwork.html">Group Work</a></li>
+      <li><a href="skills.html" class="active">Skills</a></li>
+      <li><a href="application.html">Letter</a></li>
+      <li><a href="email.html">Email</a></li>
+      <li><a href="study.html">Study Tips</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+  <section class="fade">
+    <h1>Skills & Projects</h1>
+    <p>A showcase of the tools and projects I've worked with so far in my Applied Business Computing studies.</p>
+
+    <div class="grid grid-2" style="margin-top:2rem;">
+
+      <div class="skill-card">
+        <img src="assets/img/excel.png" alt="Excel spreadsheet or dashboard">
+        <div class="body">
+          <h3>Microsoft Excel</h3>
+          <p>[Describe what you can do with Excel — formulas, charts, data cleaning, pivot tables. Explain what the screenshot shows and what it demonstrates about your ability to work with business data.]</p>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/img/python.png" alt="Python script output">
+        <div class="body">
+          <h3>Python</h3>
+          <p>[Describe a small script or program you wrote — a data filter, calculator, or simple business tool. Explain what it does and what it demonstrates.]</p>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/img/canva.png" alt="Canva business presentation or poster">
+        <div class="body">
+          <h3>Canva / Presentation Design</h3>
+          <p>[Describe a poster, business pitch deck, or presentation you designed. Link to the design if it's public. Explain what business idea or message it communicated.]</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Kago Thipe · BSc Applied Business Computing · BSBS · <a href="mailto:[kago.thipe@email.com]">[kago.thipe@email.com]</a>
+</footer>
+
+<script>
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
+  });
+  document.querySelectorAll('.fade').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

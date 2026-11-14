@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reflection · Kago Thipe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">KT.</a>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="reflection.html" class="active">Reflection</a></li>
+      <li><a href="groupwork.html">Group Work</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="application.html">Letter</a></li>
+      <li><a href="email.html">Email</a></li>
+      <li><a href="study.html">Study Tips</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+  <section class="reflection fade">
+    <h1>Reflecting on My Learning Journey</h1>
+    <p><em>Published: [Date] · Estimated reading time: 3 min</em></p>
+
+    <p>[Opening hook — describe one specific moment from your first weeks in BSc Applied Business Computing. Something honest: a class that overwhelmed you, a deadline you nearly missed, or a realisation about how different tertiary study is from high school.]</p>
+
+    <h2>The Challenge</h2>
+    <p>[Describe the main academic challenge you faced — e.g., balancing business modules with computing modules, adapting to a faster pace, learning to study independently, or dealing with procrastination.]</p>
+
+    <h2>What I Changed</h2>
+    <p>[Describe the strategies you adopted. Be specific — a weekly timetable, the Pomodoro technique, study groups, using the library, asking lecturers for help, active recall.]</p>
+
+    <h2>Growth</h2>
+    <p>[Reflect on how you've changed. Compare your first week with now. What do you understand better? What habits have stuck?]</p>
+
+    <h2>Looking Ahead</h2>
+    <p>[State two or three goals for next semester — academic, personal, or professional. Tie one to business computing specifically.]</p>
+  </section>
+</main>
+
+<footer>
+  © 2026 Kago Thipe · BSc Applied Business Computing · BSBS · <a href="mailto:[kago.thipe@email.com]">[kago.thipe@email.com]</a>
+</footer>
+
+<script>
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
+  });
+  document.querySelectorAll('.fade').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

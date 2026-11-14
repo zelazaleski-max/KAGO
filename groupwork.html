@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Group Work Reflection · Kago Thipe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">KT.</a>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+      <li><a href="groupwork.html" class="active">Group Work</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="application.html">Letter</a></li>
+      <li><a href="email.html">Email</a></li>
+      <li><a href="study.html">Study Tips</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+  <section class="reflection fade">
+    <h1>Group Work: A Tuckman Reflection</h1>
+    <p><em>Reflecting on my semester group project through the five stages of group development.</em></p>
+
+    <h2>Forming</h2>
+    <p>[How was your group formed? Did you know your group mates beforehand? Describe your first impressions and how you felt about the task ahead. Who spoke first? Was there uncertainty about roles?]</p>
+
+    <h2>Storming</h2>
+    <p>[Be honest — this stage earns the best marks. Describe a real disagreement: over the topic, workload, deadlines, or communication styles. How did the group react? How was it resolved? What did you personally do?]</p>
+
+    <h2>Norming</h2>
+    <p>[Describe the shared expectations and routines your group established — a WhatsApp group, weekly check-ins, a task schedule, agreed formatting rules. How did you decide who did what?]</p>
+
+    <h2>Performing</h2>
+    <p>[How did the group begin to function effectively? What did you deliver? What was your specific contribution? What made it work?]</p>
+
+    <h2>Adjourning</h2>
+    <p>[How did the group conclude? Was there closure — a celebration, a final meeting? Or unfinished tension? What would you have done differently?]</p>
+
+    <h2>What I Learned</h2>
+    <p>[Two or three concrete lessons about communication and collaboration — e.g., "I learned that silence doesn't mean agreement," "I learned to clarify expectations early," "I learned to give feedback gently but directly."]</p>
+  </section>
+</main>
+
+<footer>
+  © 2026 Kago Thipe · BSc Applied Business Computing · BSBS · <a href="mailto:[kago.thipe@email.com]">[kago.thipe@email.com]</a>
+</footer>
+
+<script>
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
+  });
+  document.querySelectorAll('.fade').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

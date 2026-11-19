@@ -28,4 +28,4 @@ This portfolio showcases my academic journey, group work experience, skills, and
 - Fonts: Inter + Poppins (Google Fonts)
 
 ## Author
-Kago Thipe · [kago.thipe@email.com]
+Kago Thipe · [bs-abc26-046@thuto.bac.ac.bw]
